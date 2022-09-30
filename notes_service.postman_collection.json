@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "62b49484-517a-4ad3-bff3-6f65a56714c1",
+		"name": "notes_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "282393"
+	},
+	"item": [
+		{
+			"name": "/notes/stats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/notes/stats",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/notes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/notes",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/notes/9604c8a9-a880-4cf1-9c43-effa89c4bb8c",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"9604c8a9-a880-4cf1-9c43-effa89c4bb8c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/notes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Shoping list\",\n    \"category\": \"Task\",\n    \"content\": \"Apples, oranges, bacon\",\n    \"dates\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/notes",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/:id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"9604c8a9-a880-4cf1-9c43-effa89c4bb8caaddfdfdfdfdfd\",\n    \"name\": \"Shoping list\",\n    \"created\": 13445563424324242,\n    \"category\": \"Idea\",\n    \"content\": \"Dogs and cats\",\n    \"dates\": \"12/05/2025\",\n    \"status\": \"archived\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/notes/9604c8a9-a880-4cf1-9c43-effa89c4bb8c",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"9604c8a9-a880-4cf1-9c43-effa89c4bb8c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/notes/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/notes/9604c8a9-a880-4cf1-9c43-effa89c4bb8c",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"9604c8a9-a880-4cf1-9c43-effa89c4bb8c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
